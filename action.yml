@@ -27,7 +27,7 @@ inputs:
 
       The Web IDE must be based on Eclipse Che® 7.60 for this feature.
     required: false
-    default: 'false'
+    default: 'true'
   web_ide_instance:
     description: The base url for the Web IDE instance
     required: false

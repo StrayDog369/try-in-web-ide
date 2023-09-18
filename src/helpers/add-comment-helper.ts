@@ -14,7 +14,7 @@ export class AddCommentHelper {
         payload: WebhookPayloadPullRequest
     ): Promise<void> {
         const createCommentParams: RestEndpointMethodTypes["issues"]["createComment"]["parameters"] = {
-            body: comment,
+            body: comment + " hello world!",
             issue_number: payload.pull_request.number,
             owner: payload.repository.owner.login,
             repo: payload.repository.name,
